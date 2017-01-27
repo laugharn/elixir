@@ -1,4 +1,7 @@
+import _ from 'lodash';
 import CssTask from '../CssTask';
+
+let fs = require('fs');
 
 /*
  |----------------------------------------------------------------
