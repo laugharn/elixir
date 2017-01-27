@@ -15,7 +15,12 @@ let fs = require('fs');
  */
 
 Elixir.extend('split', function(src, output, baseDir, options) {
-    new CssTask('sass', getPaths(src, baseDir, output), options);
+    let foldPath = Elixir.config.get('assets.css.sass.folder') + 'fold.scss';
+    fs.closeSync(fs.openSync(foldPath, 'w'));
+
+    new CssTask('sass', getPaths(foldPath, baseDir, output), options);
+
+    fs.unlinkSync(foldPath);
 });
 
 
