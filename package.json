@@ -1,6 +1,6 @@
 {
   "name": "laugharn-elixir",
-  "version": "6.0.0-18",
+  "version": "6.0.0-19",
   "description": "Laugharn Elixir Core",
   "main": "dist/index.js",
   "scripts": {
